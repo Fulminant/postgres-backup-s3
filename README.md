@@ -5,13 +5,13 @@ This project provides Docker images to periodically back up a PostgreSQL databas
 ## Backup
 ```yaml
 postgres:
-  image: postgres:13
+  image: postgres:15
   environment:
     POSTGRES_USER: user
     POSTGRES_PASSWORD: password
 
 pg_backup_s3:
-  image: eeshugerman/postgres-backup-s3:13
+  image: eeshugerman/postgres-backup-s3:15
   environment:
     SCHEDULE: '@weekly'
     PASSPHRASE: passphrase
